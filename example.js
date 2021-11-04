@@ -17,6 +17,8 @@ export default class App extends Component {
             this.setState({info:data})
           },(reason)=>{
             this.setState({reason:reason})
+          },()=>{
+            this.setState({info:null})
           })}>
         <Text> Start </Text>
       </TouchableOpacity>

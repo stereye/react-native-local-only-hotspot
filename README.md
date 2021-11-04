@@ -19,7 +19,7 @@ This is a react native module to start a local-only hotspot on android devices r
 import LocalOnlyHotspot from 'react-native-local-only-hotspot';
 
 // To start the local-only-hotspot
-LocalOnlyHotspot.start(onSuccess,onFailure)
+LocalOnlyHotspot.start(onSuccess,onFailure,onStoped)
 //onSuccess we get a jsonobject with ssid and secret
 LocalOnlyHotspot.stop(onStop)
 //onStop we get a sting 'Stopped'

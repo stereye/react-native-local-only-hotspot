@@ -36,20 +36,26 @@ public class LocalOnlyHotspotModule extends ReactContextBaseJavaModule {
 //        callback.invoke("Received numberArgument: " + numberArgument + " stringArgument: " + stringArgument);
 //    }
     @ReactMethod
-    public void start(final Callback onStart, final Callback onFailed){
+    public void start(final Callback onStarted, final Callback onFailed, final Callback onStopped){
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             wifiManager.startLocalOnlyHotspot(new WifiManager.LocalOnlyHotspotCallback(){
                 @Override
                 public void onStarted(WifiManager.LocalOnlyHotspotReservation reservation) {
                     super.onStarted(reservation);
                     mReservation = reservation;
-                    onStart.invoke(config());
+                    onStarted.invoke(config());
                 }
 
                 @Override
                 public void onFailed(int reason) {
                     super.onFailed(reason);
                     onFailed.invoke(reason);
+                }
+
+                @Override
+                public void onStopped() {
+                    super.onStopped();
+                    onStopped.invoke();
                 }
             },new Handler());
         }
