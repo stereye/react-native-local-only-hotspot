@@ -1,22 +1,21 @@
 {
-  "name": "react-native-local-only-hotspot",
+  "name": "@stereye/react-native-local-only-hotspot",
   "title": "React Native Local Only Hotspot",
-  "version": "1.0.0",
-  "description": "TODO",
+  "version": "1.0.1",
+  "description": "Forked version of https://github.com/parthbhinde/react-native-local-only-hotspot, rewrite all API protocal using new RN style and fix bugs.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/parthbhinde/react-native-local-only-hotspot.git",
-    "baseUrl": "https://github.com/parthbhinde/react-native-local-only-hotspot"
+    "url": "https://git.stereye.tech/polar/third-party/react-native-local-only-hotspot.git"
   },
   "keywords": [
     "react-native"
   ],
   "author": {
-    "name": "Parth Bhinde"
+    "name": "Wentao Lyu"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",
