@@ -1,7 +1,7 @@
 {
   "name": "@stereye/react-native-local-only-hotspot",
   "title": "React Native Local Only Hotspot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Forked version of https://github.com/parthbhinde/react-native-local-only-hotspot, rewrite all API protocal using new RN style and fix bugs.",
   "main": "index.js",
   "scripts": {
